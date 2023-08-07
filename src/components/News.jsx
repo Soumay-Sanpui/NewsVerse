@@ -49,7 +49,7 @@ export class News extends Component {
     render() {
         return (
             <div className="container my-3 p-4">
-                <h2>NewsVerse - Top Headlines</h2>
+                <h2 className='mt-4'>NewsVerse - Top Headlines</h2>
                 {this.state.loading && <Spinner />}
                 <div className="row">
                     {!this.state.loading && this.state.articles.map((element) => {
